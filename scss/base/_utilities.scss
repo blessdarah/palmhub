@@ -1,0 +1,30 @@
+// media queries
+$tablet-width: 768px;
+$desktop-width: 1024px;
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+        @content;
+    }
+}
+
+.container {
+    width: 80%;
+    max-width: 94%;
+    margin: 0 auto;
+}
+
+@mixin center-text {
+    text-align: center;
+}
+
+@mixin center-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

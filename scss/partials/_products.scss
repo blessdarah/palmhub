@@ -1,0 +1,30 @@
+.products {
+    background: #f8f8f8;
+    padding: 5rem 0;
+    .feature__item {
+        background: #fff;
+    }
+}
+
+@include tablet {
+    .products {
+        &__grid {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .product {
+            flex: 1;
+            &__title {
+                color: $red;
+                font-size: 200%;
+            }
+        }
+        .feature__item {
+            flex: 1;
+            border-radius: $small-space;
+            margin-left: 1rem;
+            border-bottom-color: $red;
+        }
+    }
+}

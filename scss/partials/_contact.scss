@@ -1,0 +1,9 @@
+.contact {
+    padding: $large-space 0;
+    background: #f8f8f8;
+    @include center-text;
+    color: #181818;
+    &__text {
+        color: $green;
+    }
+}

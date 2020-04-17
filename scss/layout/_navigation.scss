@@ -1,0 +1,19 @@
+.navigation {
+    height: $nav-height;
+    line-height: $nav-height;
+    border-bottom: 4px solid maroon;
+    box-shadow: $shadow;
+    &__nav {
+        display: flex;
+    }
+    &__links {
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__item {
+        display: inline-block;
+        margin-left: $large-space;
+        font-weight: bold;
+    }
+}

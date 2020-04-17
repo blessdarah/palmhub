@@ -1,0 +1,54 @@
+.features {
+    margin: 5rem 0;
+    background: #fff;
+    &__header {
+        @include center-text;
+    }
+    &__grid {
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        margin: 2rem
+    }
+}
+
+.feature__item {
+    margin-bottom: 1rem;
+    box-shadow: $shadow;
+    padding: $large-space;
+    border-radius: $small-space;
+    flex: 1;
+    &:nth-child(1) {
+        border-bottom: 10px solid $yellow;
+    }
+    &:nth-child(2) {
+        border-bottom: 10px solid $red;
+    }
+    &:nth-child(3) {
+        border-bottom: 10px solid $dark;
+    }
+}
+
+@include tablet {
+    .features {
+        // background: url('../../imgs/palm-branches.png') no-repeat -98% 10%;
+        &__header {
+            width: 60%;
+            margin: 2rem auto;
+            font-size: 120%;
+        }
+        &__grid {
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+        .feature__item {
+            box-sizing: border-box;
+            flex-basis: 18rem;
+            padding: $large-space;
+            margin: 0 10px 1rem;
+            &__title {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}

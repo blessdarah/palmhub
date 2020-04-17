@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 92.25%;
+}
+
+p {
+    line-height: 1.5;
+    font-family: var(--text-font);
+}
+
+a {
+    text-decoration: none;
+    color: var(--red);
+}
+
+ol,
+li {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

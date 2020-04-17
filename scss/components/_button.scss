@@ -1,0 +1,40 @@
+button,
+.button,
+.input[type='submit'] {
+    display: inline-block;
+    border-radius: $small-radius;
+    cursor: pointer;
+    background: #fff linear-gradient(128deg, transparent, #18181888);
+    padding: .4rem 2rem;
+    font-weight: 500;
+    font-family: inherit;
+    color: #fff;
+    text-align: center;
+    margin: $small-space 0;
+    background-size: 200%;
+    border: none;
+    box-shadow: $shadow;
+}
+
+.button--green {
+    background-color: $green;
+}
+
+.button--blue {
+    background-color: $blue;
+}
+
+.button--red {
+    background-color: $red;
+}
+
+.button--yellow {
+    background-color: $yellow;
+}
+
+@media screen and (min-width: 700px) {
+    .button {
+        padding: .8rem 2rem;
+        width: 12rem;
+    }
+}

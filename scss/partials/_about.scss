@@ -1,0 +1,15 @@
+.about {
+    padding: 5rem 0;
+    &__title {
+        margin-bottom: 1rem;
+    }
+}
+
+@include tablet {
+    .about {
+        &__text {
+            column-count: 3;
+            column-gap: 20px;
+        }
+    }
+}

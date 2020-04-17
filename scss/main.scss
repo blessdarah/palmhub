@@ -1,0 +1,27 @@
+@import 'base/variables';
+@import 'base/utilities';
+@import 'base/default';
+
+/***************
+* layout styles
+****************/
+
+@import 'layout/navigation';
+
+/***************
+* partials
+****************/
+
+@import 'partials/hero';
+@import 'partials/features';
+@import 'partials/products';
+@import 'partials/banner';
+@import 'partials/about';
+@import 'partials/contact';
+@import 'partials/qualities';
+
+/***************
+* component styles
+****************/
+
+@import 'components/button';

@@ -1,0 +1,15 @@
+.banner {
+    padding: 8rem 0;
+    background: url('../../imgs/background.svg');
+    &__content {
+        @include center-content;
+        @include center-text;
+        flex-flow: column;
+    }
+    &__text {
+        display: inline-block;
+        background: white;
+        padding: .4rem 1rem;
+        font-size: 180%;
+    }
+}

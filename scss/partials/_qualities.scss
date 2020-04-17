@@ -1,0 +1,52 @@
+.qualities {
+    padding: 5rem 0;
+    &__left {
+        @include center-text;
+        position: relative;
+        height: 15rem;
+    }
+    &__quality {
+        position: absolute;
+        display: inline-block;
+        width: 8rem;
+        height: 8rem;
+        background: linear-gradient(120deg transparent, rgba(0, 0, 0, 0.25));
+        border-radius: $small-space;
+        color: #fff;
+        @include center-content;
+        box-shadow: $shadow;
+        &:nth-child(1) {
+            background-color: $red;
+        }
+        &:nth-child(2) {
+            background-color: $green;
+            left: 22%;
+            top: 10%;
+        }
+        &:nth-child(3) {
+            background-color: $yellow;
+            left: 10%;
+            top: 35%;
+        }
+    }
+}
+
+@include tablet {
+    .qualities {
+        &__grid {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__quality {
+            width: 13rem;
+            &:nth-child(2) {
+                top: 10px;
+            }
+        }
+        &__left,
+        &__right {
+            flex: 1;
+        }
+    }
+}
