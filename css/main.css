@@ -2,10 +2,31 @@
 * Keywords to use:
 * tiny, small, medium, large
 */
+/* Colors collection */
 .container {
   width: 80%;
   max-width: 94%;
   margin: 0 auto;
+}
+
+.text-green {
+  color: #2b9c2b !important;
+}
+
+.text-blue {
+  color: #84dbff !important;
+}
+
+.text-yellow {
+  color: #b99315 !important;
+}
+
+.text-dark {
+  color: #181818 !important;
+}
+
+.text-red {
+  color: #b91515 !important;
 }
 
 *,
@@ -163,12 +184,38 @@ img {
 .products .feature__item {
   background: #fff;
 }
+.products .feature__item--green {
+  border-bottom-color: #2b9c2b;
+}
+.products .feature__item--blue {
+  border-bottom-color: #84dbff;
+}
+.products .feature__item--yellow {
+  border-bottom-color: #b99315;
+}
+.products .feature__item--dark {
+  border-bottom-color: #181818;
+}
+.products .feature__item--red {
+  border-bottom-color: #b91515;
+}
 
 @media (min-width: 768px) {
   .products__grid {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  .products__grid:nth-child(even) {
+    margin: 5rem auto;
+  }
+  .products__grid:nth-child(even) .product {
+    order: 2;
+    text-align: right;
+  }
+  .products__grid:nth-child(even) .feature__item {
+    order: 1;
+    margin-left: 0;
   }
   .products .product {
     flex: 1;
@@ -181,12 +228,12 @@ img {
     flex: 1;
     border-radius: 0.8rem;
     margin-left: 1rem;
-    border-bottom-color: #b91515;
   }
 }
 .banner {
   padding: 8rem 0;
-  background: url("../../imgs/background.svg");
+  background: #b91515;
+  color: #fff;
 }
 .banner__content {
   display: flex;
@@ -194,6 +241,10 @@ img {
   justify-content: center;
   text-align: center;
   flex-flow: column;
+}
+.banner__title {
+  font-size: 200%;
+  text-transform: uppercase;
 }
 .banner__text {
   display: inline-block;
@@ -305,12 +356,16 @@ button,
   background-color: #84dbff;
 }
 
-.button--red {
-  background-color: #b91515;
-}
-
 .button--yellow {
   background-color: #b99315;
+}
+
+.button--dark {
+  background-color: #181818;
+}
+
+.button--red {
+  background-color: #b91515;
 }
 
 @media screen and (min-width: 700px) {

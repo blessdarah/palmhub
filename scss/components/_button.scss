@@ -16,20 +16,11 @@ button,
     box-shadow: $shadow;
 }
 
-.button--green {
-    background-color: $green;
-}
-
-.button--blue {
-    background-color: $blue;
-}
-
-.button--red {
-    background-color: $red;
-}
-
-.button--yellow {
-    background-color: $yellow;
+@each $color,
+$value in $colors {
+    .button--#{$color} {
+        background-color: $value;
+    }
 }
 
 @media screen and (min-width: 700px) {

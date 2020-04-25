@@ -1,10 +1,15 @@
 .banner {
     padding: 8rem 0;
-    background: url('../../imgs/background.svg');
+    background: $red;
+    color: #fff;
     &__content {
         @include center-content;
         @include center-text;
         flex-flow: column;
+    }
+    &__title {
+        font-size: 200%;
+        text-transform: uppercase;
     }
     &__text {
         display: inline-block;

@@ -4,6 +4,12 @@
     .feature__item {
         background: #fff;
     }
+    @each $color,
+    $value in $colors {
+        .feature__item--#{$color} {
+            border-bottom-color: $value;
+        }
+    }
 }
 
 @include tablet {
@@ -12,6 +18,17 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            &:nth-child(even) {
+                margin: 5rem auto;
+                .product {
+                    order: 2;
+                    text-align: right;
+                }
+                .feature__item {
+                    order: 1;
+                    margin-left: 0;
+                }
+            }
         }
         .product {
             flex: 1;
@@ -24,7 +41,7 @@
             flex: 1;
             border-radius: $small-space;
             margin-left: 1rem;
-            border-bottom-color: $red;
+            // border-bottom-color: $red;
         }
     }
 }

@@ -28,3 +28,10 @@ $desktop-width: 1024px;
     align-items: center;
     justify-content: center;
 }
+
+@each $color,
+$value in $colors {
+    .text-#{$color} {
+        color: $value !important;
+    }
+}
