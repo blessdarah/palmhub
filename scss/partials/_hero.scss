@@ -1,7 +1,7 @@
 .hero {
     @include center-content;
-    // background: url('../../imgs/oil\ and\ nuts.jpg') no-repeat;
-    background: $light;
+    background: linear-gradient(30deg, $red, $yellow);
+    // background: $light;
     &__content {
         @include center-text;
         padding: $large-space 0;

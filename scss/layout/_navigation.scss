@@ -1,6 +1,4 @@
 .navigation {
-    height: $nav-height;
-    line-height: $nav-height;
     box-shadow: $shadow;
     #logo {
         width: 3rem;
@@ -8,6 +6,9 @@
     }
     &__nav {
         display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
     }
     &__links {
         flex-grow: 1;
@@ -18,5 +19,17 @@
         display: inline-block;
         margin-left: $large-space;
         font-weight: bold;
+    }
+}
+
+@include desktop {
+    .navigation {
+        height: $nav-height;
+        line-height: $nav-height;
+        &__nav {
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
 }
