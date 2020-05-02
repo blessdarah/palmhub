@@ -1,8 +1,11 @@
 .navigation {
     height: $nav-height;
     line-height: $nav-height;
-    border-bottom: 4px solid maroon;
     box-shadow: $shadow;
+    #logo {
+        width: 3rem;
+        height: 3rem;
+    }
     &__nav {
         display: flex;
     }

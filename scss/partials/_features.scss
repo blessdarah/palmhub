@@ -18,6 +18,13 @@
     padding: $large-space;
     border-radius: $small-space;
     flex: 1;
+    text-align: center;
+    &__image {
+        display: block;
+        width: 8rem;
+        height: 8rem;
+        margin: 0 auto 1rem;
+    }
     &:nth-child(1) {
         border-bottom: 10px solid $yellow;
     }
@@ -25,7 +32,7 @@
         border-bottom: 10px solid $red;
     }
     &:nth-child(3) {
-        border-bottom: 10px solid $dark;
+        border-bottom: 10px solid $blue;
     }
 }
 

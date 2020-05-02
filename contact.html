@@ -27,22 +27,38 @@
         <header class="banner">
             <div class="container">
                 <div class="banner__content">
-                    <h3 class="banner__title">About us</h3>
+                    <h3 class="banner__title">Contact us</h3>
                 </div>
             </div>
         </header>
 
         <!-- about palmhub -->
-        <section id="about" class="about">
-            <div class="container">
-                <h3 class="about__title">
-                    About palmhub
-                </h3>
-                <p class="about__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore laborum sequi consectetur suscipit rerum, totam excepturi quibusdam animi alias dolor harum odio nihil accusantium qui eos a cumque, sapiente minima. Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Quaerat enim temporibus, culpa minus ea earum quam placeat natus iure quisquam cumque exercitationem illo assumenda tempore fugiat nobis aspernatur vero necessitatibus! Lorem ipsum dolor sit amet consectetur, adipisicing
-                    elit. Totam voluptatibus, hic voluptate veritatis tempora placeat ea necessitatibus autem nobis id porro sapiente repellat, nostrum, qui soluta culpa? Ducimus, sequi recusandae! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Eaque quisquam, ea quod perspiciatis neque vel quis repellat numquam tenetur reiciendis pariatur vitae debitis dicta harum, est atque labore quia! Assumenda.</p>
+        <section id="contact" class="contact">
+            <div class="container contact__grid">
+                <div class="left">
+
+                </div>
+                <div class="right">
+                    <form action="#" class="form">
+                        <p class="form__box">
+                            <label for="name">Your name</label>
+                            <input type="text" class="form__input" placeholder="Eg: John Doe" required>
+                        </p>
+                        <p class="form__box">
+                            <label for="phonenumber">Phonumber</label>
+                            <input type="tel" class="form__input" pattern="^6\d{8}" required title="Number must start with 6 and must be 9 digits long" placeholder="(+237) 678218694">
+                        </p>
+
+                        <p class="form__box">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" class="form__input-area" cols="30" rows="7" placeholder="Start typing here..."></textarea>
+                        </p>
+                        <p class="form__box form__box--submit">
+                            <label for=""></label>
+                            <button type="submit" class="button--blue">Submit</button>
+                        </p>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
