@@ -71,6 +71,7 @@ img {
 ****************/
 .navigation {
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  padding-bottom: 1rem;
 }
 .navigation #logo {
   width: 3rem;
